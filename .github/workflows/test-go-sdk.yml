@@ -1,19 +1,10 @@
+
 name: Go SDK Check
 
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - apps/go-sdk/**
-      - .github/workflows/test-go-sdk.yml
-  push:
-    branches:
-      - main
-    paths:
-      - apps/go-sdk/**
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   build-and-vet:
     name: Build and Vet

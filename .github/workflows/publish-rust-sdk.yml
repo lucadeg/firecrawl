@@ -1,13 +1,9 @@
+
 name: Publish Rust SDK
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - 'apps/rust-sdk/**'
-
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   publish:
     name: Publish to crates.io

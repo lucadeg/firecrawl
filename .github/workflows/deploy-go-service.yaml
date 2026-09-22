@@ -1,17 +1,13 @@
+
 name: Deploy Go Service to GHCR
 
 env:
   DOTNET_VERSION: "6.0.x"
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - apps/go-html-to-md-service/**
-      - .github/workflows/deploy-go-service.yaml
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   push-app-image:
     runs-on: blacksmith-4vcpu-ubuntu-2404

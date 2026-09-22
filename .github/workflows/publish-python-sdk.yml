@@ -1,12 +1,9 @@
+
 name: Publish Python SDK 
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'apps/python-sdk/**'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 env:
   PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
   PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}

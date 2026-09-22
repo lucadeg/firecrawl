@@ -1,21 +1,9 @@
+
 name: Publish Go SDK
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - 'apps/go-sdk/**'
-      - '.github/workflows/publish-go-sdk.yml'
-
-# Go modules are "published" by pushing a git tag. For modules living in a
-# monorepo subdirectory, the tag MUST be prefixed with the subdir path —
-# e.g. apps/go-sdk/v1.0.0 — for the Go module proxy to resolve it.
-#
-# This workflow reads Version from apps/go-sdk/version.go, checks whether the
-# corresponding tag already exists, and if not creates+pushes it, then warms
-# the proxy.golang.org cache to trigger pkg.go.dev indexing.
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   publish:
     name: Tag and index on pkg.go.dev

@@ -1,19 +1,10 @@
+
 name: Go HTML-to-Markdown Service Check
 
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - apps/go-html-to-md-service/**
-      - .github/workflows/test-go-html-to-md-service.yml
-  push:
-    branches:
-      - main
-    paths:
-      - apps/go-html-to-md-service/**
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   build-vet-test:
     name: Build, Vet and Test

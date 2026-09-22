@@ -1,10 +1,9 @@
+
 name: Server Test Suite
 
 on:
-  pull_request:
-    branches:
-      - main
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 concurrency:
   group: ci=${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true

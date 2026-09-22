@@ -1,19 +1,10 @@
+
 name: PHP SDK Test Suite
 
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - apps/php-sdk/**
-      - .github/workflows/test-php-sdk.yml
-  push:
-    branches:
-      - main
-    paths:
-      - apps/php-sdk/**
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   build-and-test:
     name: Build and Test

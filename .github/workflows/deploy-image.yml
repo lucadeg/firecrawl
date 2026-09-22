@@ -1,14 +1,10 @@
+
 name: Deploy Images to GHCR
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - apps/api/**
-      - .github/workflows/deploy-image.yml
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   build:
     runs-on: ${{ matrix.runner }}

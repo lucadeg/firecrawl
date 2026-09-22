@@ -1,19 +1,10 @@
+
 name: Ruby SDK Test Suite
 
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - apps/ruby-sdk/**
-      - .github/workflows/test-ruby-sdk.yml
-  push:
-    branches:
-      - main
-    paths:
-      - apps/ruby-sdk/**
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   build-and-test:
     name: Build and Test

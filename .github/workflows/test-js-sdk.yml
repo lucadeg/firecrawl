@@ -1,12 +1,9 @@
+
 name: JS SDK Test Suite
 
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - apps/js-sdk/firecrawl/**
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 env:
   IDMUX_URL: ${{ secrets.IDMUX_URL }}
 

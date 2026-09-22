@@ -1,19 +1,10 @@
+
 name: .NET SDK Test Suite
 
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - apps/dot-net-sdk/**
-      - .github/workflows/test-dotnet-sdk.yml
-  push:
-    branches:
-      - main
-    paths:
-      - apps/dot-net-sdk/**
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   build-and-test:
     name: Build and Test
